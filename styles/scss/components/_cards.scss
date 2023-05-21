@@ -1,0 +1,36 @@
+.itemLink {
+  text-decoration: none;
+
+  .card:hover {
+    border: 2px solid #444;
+    box-shadow: #444 0px 4px 12px;
+  }
+}
+
+.card {
+  background-color: #242424;
+
+  .card-img {
+    object-fit: cover;
+    max-height: 327px;
+  }
+
+  .card-body {
+    .card-title,
+    .card-text {
+      color: #eee;
+    }
+
+    .tagStyle {
+      border-radius: 5px;
+      background-color: $card-color;
+      padding: 0.3rem 1rem;
+      color: $tagColor;
+    }
+
+    .iconStyle,
+    .sellerAvatar {
+      max-width: 24px;
+    }
+  }
+}

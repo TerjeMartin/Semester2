@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Websites page were users can register an account."
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer type="module" src="../src/js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e338dcafec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/css/index.css" />
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <section
+      class="container vh-100 d-flex flex-column align-items-center gap-2"
+    >
+      <div class="row d-flex flex-column gap-2 col-lg-4">
+        
+
+        <form
+          action="submit"
+          class="d-flex flex-column gap-2"
+          id="registrationForm"
+        >
+          <div>
+            <div class="form-floating mb-3">
+              <input
+                type="username"
+                id="userName"
+                class="form-control"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <label class="form-label" for="userName"
+                ><i class="fa-solid fa-user"></i> Username</label
+              >
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="userEmail"
+                placeholder="Email"
+                required
+                pattern="^[a-zA-Z0-9._%+-]+@stud\.noroff\.no$"
+                title="You have to use a stud.noroff.no"
+              />
+              <label class="form-label" for="userEmail"
+                ><i class="fa-solid fa-at"></i> Email</label
+              >
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                id="userPassword"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <label class="form-label" for="userPassword"
+                ><i class="fa-solid fa-key"></i> Password</label
+              >
+            </div>
+          </div>
+
+          <button class="rounded-2 btn btn-primary" id="regisConfirmBtn">
+            Complete Registration
+          </button>
+          <a
+            href="../login/index.html"
+            class="rounded-2 btn btn-secondary border-primary"
+          >
+            Back
+          </a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

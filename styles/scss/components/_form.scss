@@ -1,0 +1,29 @@
+// Item Information Form
+
+.pictureInput::placeholder {
+  background-image: url(../../../assets/Icons/pngIcon.png);
+}
+
+.titleInput::placeholder {
+  background-image: url(../../assets/Icons/textIcon.png);
+}
+
+.descriptionInput::placeholder {
+  background-image: url(../../assets/Icons/descriptionIcon.png);
+}
+.priceInput::placeholder {
+  background-image: url(../../assets/Icons/currencyFormIcon.png);
+}
+
+.pictureInput::placeholder,
+.titleInput::placeholder,
+.descriptionInput::placeholder,
+.priceInput::placeholder,
+.userName::placeholder {
+  background-repeat: no-repeat;
+  text-indent: 30px;
+}
+
+.userName::placeholder {
+  background-image: url(../../assets/Icons/userIcon.png);
+}

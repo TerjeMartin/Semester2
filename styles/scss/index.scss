@@ -1,0 +1,70 @@
+@import "./components/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./components/typography";
+@import "./components/cards";
+@import "./components/form";
+
+body {
+  background-color: $primary-background;
+  font-family: Roboto, sans-serif;
+}
+
+.main-content {
+  margin-bottom: 80px;
+}
+
+.form-label {
+  color: #888888;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #282828;
+  color: #eee;
+  border: none;
+}
+.btn-secondary {
+  background-color: $secondary;
+  color: $primary;
+}
+.btn-secondary:hover {
+  background-color: $primary;
+  color: $secondary;
+}
+
+.btn-danger {
+  background-color: $secondary;
+  color: $fail;
+  font-weight: 500;
+}
+
+.navbar-color,
+.currencyDisplay {
+  background-color: #242424;
+}
+
+.nav-link,
+.inputItemInfoText {
+  color: #888888;
+}
+
+.active {
+  color: $primary;
+}
+
+// Collections Page
+
+.tabNav {
+  background-color: #282828;
+}
+
+.breadcrumbLinkStyle {
+  text-decoration: none;
+}
+
+// Profile Page
+
+.userAvatar {
+  object-fit: cover;
+  max-height: 327px;
+}

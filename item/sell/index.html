@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Websites home page." />
+    <script
+      defer
+      src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer type="module" src="../../src/js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e338dcafec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../styles/css/index.css" />
+    <title>Sell Item</title>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar-color navbar fixed-bottom sticky-lg-top"
+        data-bs-theme="dark"
+      >
+        <div
+          class="container justify-content-center justify-content-lg-between"
+        >
+          
+            
+
+          <ul class="nav gap-1">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex flex-column align-items-center navLink"
+                href="../../home/index.html"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+            </li>
+            
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex flex-column align-items-center navLink"
+                href="../../profile/index.html"
+                ><i class="fa-solid fa-user"></i> Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex flex-column align-items-center navLink"
+                href="../../login/index.html"
+                id="logoutBtn"
+                ><i class="fa-solid fa-door-open"></i>Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container d-flex flex-column gap-2 main-content">
+        <div class="d-lg-none row currencyDisplay sticky-top">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex p-1 text-center">
+              <img
+                class="img-fluid"
+                src=""
+                alt=""
+              />
+            </div>
+
+            <div class="d-flex align-items-center gap-1 p-1">
+              <div class="d-flex">
+                <img
+                  class="img-fluid"
+                  src=""
+                  alt=""
+                />
+              </div>
+              <p class="p-0 m-0 text-white subtext userCurrency"></p>
+            </div>
+          </div>
+        </div>
+
+        
+          
+
+        <div class="row col-12 col-lg-4 m-auto">
+          <div class="d-flex align-items-end justify-content-between">
+            <h3>Item Information</h3>
+            <a
+              href="../../collection/index.html"
+              class="btn btn-secondary shadow"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+
+          <div>
+            <hr class="border border-primary border-1 opacity-50" />
+          </div>
+
+          <div>
+            <form id="itemInformationForm" data-bs-theme="dark" action="submit">
+              <div class="mb-3">
+                <input
+                  name="media"
+                  type="url"
+                  class="form-control pictureInput"
+                  id="pictureInput"
+                  placeholder="Item URL"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  name="title"
+                  type="text"
+                  class="form-control titleInput"
+                  id="titleInput"
+                  placeholder="Item Title"
+                  required
+                  minlength="2"
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  name="description"
+                  class="form-control descriptionInput"
+                  id="descriptionInput"
+                  rows="5"
+                  placeholder="Write your item description here..."
+                  minlength="5"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="dateDeadline"
+                  ><span class="grayText">Date Deadline</span></label
+                >
+                <input
+                  name="endsAt"
+                  type="date"
+                  class="form-control"
+                  id="dateDeadline"
+                  required
+                />
+              </div>
+
+              <button class="btn btn-primary w-100">
+                <span class="thiccFont">Confirm Sell</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
